@@ -1,0 +1,438 @@
+<?xml version="1.0"?>
+<!DOCTYPE pathway SYSTEM "https://www.kegg.jp/kegg/xml/KGML_v0.7.2_.dtd">
+<!-- Creation date: Apr 14, 2021 13:41:17 +0900 (GMT+9) -->
+<pathway name="path:eco00542" org="eco" number="00542"
+         title="O-Antigen repeat unit biosynthesis"
+         image="https://www.kegg.jp/kegg/pathway/eco/eco00542.png"
+         link="https://www.kegg.jp/kegg-bin/show_pathway?eco00542">
+    <entry id="142" name="path:eco00542" type="map"
+        link="https://www.kegg.jp/dbget-bin/www_bget?eco00542">
+        <graphics name="TITLE:O-Antigen repeat unit biosynthesis" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="roundrectangle" x="194" y="58" width="307" height="25"/>
+    </entry>
+    <entry id="196" name="eco:b3784" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?eco:b3784">
+        <graphics name="rfe" fgcolor="#66CC66" bgcolor="#FFFFFF"
+             type="line" coords="489,172,519,172"/>
+    </entry>
+    <entry id="197" name="ko:K18788" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K18788">
+        <graphics name="K18788" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="399,172,429,172"/>
+    </entry>
+    <entry id="198" name="ko:K23199" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K23199">
+        <graphics name="K23199" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="327,172,357,172"/>
+    </entry>
+    <entry id="199" name="ko:K23198" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K23198">
+        <graphics name="K23198" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="262,145,282,165"/>
+    </entry>
+    <entry id="200" name="ko:K23197" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K23197">
+        <graphics name="K23197" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="263,196,283,176"/>
+    </entry>
+    <entry id="203" name="ko:K12993" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K12993">
+        <graphics name="K12993" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="426,352,456,352"/>
+    </entry>
+    <entry id="204" name="ko:K12993" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K12993">
+        <graphics name="K12993" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="348,404,378,404"/>
+    </entry>
+    <entry id="205" name="ko:K12993" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K12993">
+        <graphics name="K12993" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="274,404,304,404"/>
+    </entry>
+    <entry id="206" name="ko:K12993" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K12993">
+        <graphics name="K12993" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="201,404,231,404"/>
+    </entry>
+    <entry id="207" name="ko:K12993" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K12993">
+        <graphics name="K12993" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="128,404,158,404"/>
+    </entry>
+    <entry id="208" name="ko:K12993" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K12993">
+        <graphics name="K12993" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="348,352,378,352"/>
+    </entry>
+    <entry id="209" name="ko:K12993" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K12993">
+        <graphics name="K12993" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="274,351,304,351"/>
+    </entry>
+    <entry id="210" name="ko:K12993" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K12993">
+        <graphics name="K12993" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="200,351,230,351"/>
+    </entry>
+    <entry id="212" name="ko:K24658" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K24658">
+        <graphics name="K24658" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="426,302,456,302"/>
+    </entry>
+    <entry id="213" name="ko:K24658" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K24658">
+        <graphics name="K24658" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="348,302,378,302"/>
+    </entry>
+    <entry id="214" name="ko:K24658" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K24658">
+        <graphics name="K24658" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="274,302,304,302"/>
+    </entry>
+    <entry id="216" name="ko:K12993" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K12993">
+        <graphics name="K12993" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="426,405,456,405"/>
+    </entry>
+    <entry id="217" name="eco:b3784" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?eco:b3784">
+        <graphics name="rfe" fgcolor="#66CC66" bgcolor="#FFFFFF"
+             type="line" coords="499,514,529,514"/>
+    </entry>
+    <entry id="220" name="eco:b2032" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?eco:b2032">
+        <graphics name="wbbK" fgcolor="#66CC66" bgcolor="#FFFFFF"
+             type="line" coords="320,541,350,541"/>
+    </entry>
+    <entry id="221" name="eco:b2034" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?eco:b2034">
+        <graphics name="wbbI" fgcolor="#66CC66" bgcolor="#FFFFFF"
+             type="line" coords="252,541,282,541"/>
+    </entry>
+    <entry id="224" name="ko:K23202" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K23202">
+        <graphics name="K23202" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="409,1001,439,1001"/>
+    </entry>
+    <entry id="225" name="ko:K23201" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K23201">
+        <graphics name="K23201" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="331,1001,361,1001"/>
+    </entry>
+    <entry id="226" name="ko:K23201" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K23201">
+        <graphics name="K23201" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="256,1001,286,1001"/>
+    </entry>
+    <entry id="229" name="eco:b3784" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?eco:b3784">
+        <graphics name="rfe" fgcolor="#66CC66" bgcolor="#FFFFFF"
+             type="line" coords="499,1001,529,1001"/>
+    </entry>
+    <entry id="232" name="ko:K23202" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K23202">
+        <graphics name="K23202" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="409,694,439,694"/>
+    </entry>
+    <entry id="233" name="ko:K23201" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K23201">
+        <graphics name="K23201" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="331,694,361,694"/>
+    </entry>
+    <entry id="234" name="ko:K23201" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K23201">
+        <graphics name="K23201" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="257,694,287,694"/>
+    </entry>
+    <entry id="236" name="eco:b3784" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?eco:b3784">
+        <graphics name="rfe" fgcolor="#66CC66" bgcolor="#FFFFFF"
+             type="line" coords="499,694,529,694"/>
+    </entry>
+    <entry id="237" name="ko:K23202" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K23202">
+        <graphics name="K23202" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="409,848,439,848"/>
+    </entry>
+    <entry id="238" name="ko:K23201" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K23201">
+        <graphics name="K23201" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="331,848,361,848"/>
+    </entry>
+    <entry id="239" name="ko:K23201" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K23201">
+        <graphics name="K23201" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="257,848,287,848"/>
+    </entry>
+    <entry id="242" name="eco:b3784" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?eco:b3784">
+        <graphics name="rfe" fgcolor="#66CC66" bgcolor="#FFFFFF"
+             type="line" coords="499,848,529,848"/>
+    </entry>
+    <entry id="243" name="ko:K23202" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K23202">
+        <graphics name="K23202" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="409,764,439,764"/>
+    </entry>
+    <entry id="244" name="ko:K23201" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K23201">
+        <graphics name="K23201" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="331,764,361,764"/>
+    </entry>
+    <entry id="245" name="ko:K23201" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K23201">
+        <graphics name="K23201" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="257,764,287,764"/>
+    </entry>
+    <entry id="247" name="eco:b3784" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?eco:b3784">
+        <graphics name="rfe" fgcolor="#66CC66" bgcolor="#FFFFFF"
+             type="line" coords="499,764,529,764"/>
+    </entry>
+    <entry id="249" name="ko:K23202" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K23202">
+        <graphics name="K23202" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="409,922,439,922"/>
+    </entry>
+    <entry id="250" name="ko:K23201" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K23201">
+        <graphics name="K23201" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="332,922,362,922"/>
+    </entry>
+    <entry id="251" name="ko:K23201" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K23201">
+        <graphics name="K23201" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="256,922,286,922"/>
+    </entry>
+    <entry id="253" name="eco:b3784" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?eco:b3784">
+        <graphics name="rfe" fgcolor="#66CC66" bgcolor="#FFFFFF"
+             type="line" coords="499,922,529,922"/>
+    </entry>
+    <entry id="254" name="eco:b3784" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?eco:b3784">
+        <graphics name="rfe" fgcolor="#66CC66" bgcolor="#FFFFFF"
+             type="line" coords="1018,172,1048,172"/>
+    </entry>
+    <entry id="255" name="ko:K23102" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K23102">
+        <graphics name="K23102" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="928,172,958,172"/>
+    </entry>
+    <entry id="256" name="ko:K23101" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K23101">
+        <graphics name="K23101" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="855,172,885,172"/>
+    </entry>
+    <entry id="257" name="ko:K24906" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K24906">
+        <graphics name="K24906" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="783,172,813,172"/>
+    </entry>
+    <entry id="259" name="ko:K23103" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K23103">
+        <graphics name="K23103" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="866,204,886,184"/>
+    </entry>
+    <entry id="260" name="eco:b3784" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?eco:b3784">
+        <graphics name="rfe" fgcolor="#66CC66" bgcolor="#FFFFFF"
+             type="line" coords="974,313,1004,313"/>
+    </entry>
+    <entry id="261" name="ko:K23189" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K23189">
+        <graphics name="K23189" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="883,313,913,313"/>
+    </entry>
+    <entry id="262" name="ko:K23190" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K23190">
+        <graphics name="K23190" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="785,313,815,313"/>
+    </entry>
+    <entry id="264" name="eco:b3784" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?eco:b3784">
+        <graphics name="rfe" fgcolor="#66CC66" bgcolor="#FFFFFF"
+             type="line" coords="1017,514,1047,514"/>
+    </entry>
+    <entry id="265" name="ko:K21586" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K21586">
+        <graphics name="K21586" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="926,514,956,514"/>
+    </entry>
+    <entry id="266" name="ko:K23229" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K23229">
+        <graphics name="K23229" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="853,514,883,514"/>
+    </entry>
+    <entry id="267" name="ko:K23230" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K23230">
+        <graphics name="K23230" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="774,541,794,521"/>
+    </entry>
+    <entry id="269" name="ko:K20883" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K20883">
+        <graphics name="K20883" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="705,541,735,541"/>
+    </entry>
+    <entry id="270" name="ko:K21366" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K21366">
+        <graphics name="K21366" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="842,936,872,936"/>
+    </entry>
+    <entry id="271" name="ko:K21368" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K21368">
+        <graphics name="K21368" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="782,909,802,929"/>
+    </entry>
+    <entry id="272" name="ko:K21367" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K21367">
+        <graphics name="K21367" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="781,965,801,945"/>
+    </entry>
+    <entry id="274" name="eco:b3784" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?eco:b3784">
+        <graphics name="rfe" fgcolor="#66CC66" bgcolor="#FFFFFF"
+             type="line" coords="1024,936,1054,936"/>
+    </entry>
+    <entry id="276" name="eco:b3784" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?eco:b3784">
+        <graphics name="rfe" fgcolor="#66CC66" bgcolor="#FFFFFF"
+             type="line" coords="1024,694,1054,694"/>
+    </entry>
+    <entry id="277" name="ko:K21365" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K21365">
+        <graphics name="K21365" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="933,694,963,694"/>
+    </entry>
+    <entry id="278" name="ko:K21366" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K21366">
+        <graphics name="K21366" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="844,694,874,694"/>
+    </entry>
+    <entry id="279" name="ko:K21368" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K21368">
+        <graphics name="K21368" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="786,667,806,687"/>
+    </entry>
+    <entry id="280" name="ko:K21367" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K21367">
+        <graphics name="K21367" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="785,723,805,703"/>
+    </entry>
+    <entry id="287" name="eco:b3784" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?eco:b3784">
+        <graphics name="rfe" fgcolor="#66CC66" bgcolor="#FFFFFF"
+             type="line" coords="1024,797,1054,797"/>
+    </entry>
+    <entry id="288" name="ko:K21365" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K21365">
+        <graphics name="K21365" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="932,797,962,797"/>
+    </entry>
+    <entry id="289" name="ko:K21366" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K21366">
+        <graphics name="K21366" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="842,797,872,797"/>
+    </entry>
+    <entry id="290" name="ko:K21367" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K21367">
+        <graphics name="K21367" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="771,797,801,797"/>
+    </entry>
+    <entry id="292" name="ko:K21366" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K21366">
+        <graphics name="K21366" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="842,861,872,861"/>
+    </entry>
+    <entry id="293" name="ko:K21367" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K21367">
+        <graphics name="K21367" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="771,861,801,861"/>
+    </entry>
+    <entry id="295" name="eco:b3784" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?eco:b3784">
+        <graphics name="rfe" fgcolor="#66CC66" bgcolor="#FFFFFF"
+             type="line" coords="1024,861,1054,861"/>
+    </entry>
+    <entry id="297" name="eco:b3784" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?eco:b3784">
+        <graphics name="rfe" fgcolor="#66CC66" bgcolor="#FFFFFF"
+             type="line" coords="1511,171,1541,171"/>
+    </entry>
+    <entry id="298" name="ko:K23251" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K23251">
+        <graphics name="K23251" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="1421,171,1451,171"/>
+    </entry>
+    <entry id="299" name="ko:K23249" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K23249">
+        <graphics name="K23249" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="1353,171,1383,171"/>
+    </entry>
+    <entry id="300" name="ko:K23250" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K23250">
+        <graphics name="K23250" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="1222,171,1252,171"/>
+    </entry>
+    <entry id="302" name="eco:b3784" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?eco:b3784">
+        <graphics name="rfe" fgcolor="#66CC66" bgcolor="#FFFFFF"
+             type="line" coords="1468,314,1498,314"/>
+    </entry>
+    <entry id="303" name="ko:K23104" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K23104">
+        <graphics name="K23104" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="1380,313,1410,313"/>
+    </entry>
+    <entry id="304" name="ko:K24649" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K24649">
+        <graphics name="K24649" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="1309,313,1339,313"/>
+    </entry>
+    <entry id="306" name="ko:K23105" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K23105">
+        <graphics name="K23105" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="1248,284,1268,304"/>
+    </entry>
+    <entry id="307" name="ko:K23105" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K23105">
+        <graphics name="K23105" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="1248,346,1268,326"/>
+    </entry>
+    <entry id="308" name="eco:b3784" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?eco:b3784">
+        <graphics name="rfe" fgcolor="#66CC66" bgcolor="#FFFFFF"
+             type="line" coords="1511,514,1541,514"/>
+    </entry>
+    <entry id="309" name="ko:K23189" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K23189">
+        <graphics name="K23189" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="1420,514,1450,514"/>
+    </entry>
+    <entry id="310" name="ko:K23191" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K23191">
+        <graphics name="K23191" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="1317,514,1347,514"/>
+    </entry>
+    <entry id="312" name="eco:b3784" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?eco:b3784">
+        <graphics name="rfe" fgcolor="#66CC66" bgcolor="#FFFFFF"
+             type="line" coords="1525,694,1555,694"/>
+    </entry>
+    <entry id="313" name="ko:K23130" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K23130">
+        <graphics name="K23130" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="1437,694,1467,694"/>
+    </entry>
+    <entry id="314" name="ko:K23131" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K23131">
+        <graphics name="K23131" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="1367,694,1397,694"/>
+    </entry>
+    <entry id="315" name="ko:K23132" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K23132">
+        <graphics name="K23132" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="line" coords="1286,694,1316,694"/>
+    </entry>
+</pathway>
