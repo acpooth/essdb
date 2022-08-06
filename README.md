@@ -41,31 +41,6 @@ python noRedundantDB.py ../Db/seqs.db
   - Those organisms with enzyme list without forlder in ./Maps will raise an error.
 
 
-├── Enzymes
-│   ├── eco.list
-│   ...
-│   └── hsa.list
-├── Maps
-│   ├── eco
-│   │   ├── eco00010.xml
-│   │   ...
-│   │   └── eco00020.xml
-│   └── hsa
-│       ├── hsa00010.xml
-│       ...
-│       └── hsa0540.xml
-│
-└── Scripts
-    ├── kegg2seq.py
-    ├── make_seq.py
-    ├── make_seq.pyc
-    ├── metabolismTypeAss.py
-    ├── noRedundantDB.py
-    ├── parse_kgml.py
-    ├── parse_kgml.pyc
-    ├── traducir.py
-    └── traducir.pyc
-
 
 ```
 ├── Enzymes
@@ -94,7 +69,7 @@ python noRedundantDB.py ../Db/seqs.db
     └── traducir.pyc
 ```
 
-
+```
 .
 +-- _config.yml
 +-- _drafts
@@ -113,6 +88,6 @@ python noRedundantDB.py ../Db/seqs.db
 |   +-- members.yml
 +-- _site
 +-- index.html
-
+```
 
 
