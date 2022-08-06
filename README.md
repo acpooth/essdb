@@ -1,7 +1,3 @@
-
-
-
-
 # Conda environment.
 
 ```bash
@@ -43,9 +39,29 @@ python noRedundantDB.py ../Db/seqs.db
 
 - Only creates the ESS from those organisms that has a Enzyme list in ./Enzymes folder
   - Those organisms with enzyme list without forlder in ./Maps will raise an error.
-  
-  
 
-
-
-
+.
+├── Enzymes
+│   ├── eco.list
+│   ...
+│   └── hsa.list
+├── Maps
+│   ├── eco
+│   │   ├── eco00010.xml
+│   │   ...
+│   │   └── eco00020.xml
+│   └── hsa
+│       ├── hsa00010.xml
+│       ...
+│       └── hsa0540.xml
+│
+└── Scripts
+    ├── kegg2seq.py
+    ├── make_seq.py
+    ├── make_seq.pyc
+    ├── metabolismTypeAss.py
+    ├── noRedundantDB.py
+    ├── parse_kgml.py
+    ├── parse_kgml.pyc
+    ├── traducir.py
+    └── traducir.pyc
