@@ -95,29 +95,24 @@ python noRedundantDB.py ../Db/seqs.db
 ```
 
 
->  
->  ├── Enzymes
->  │   ├── eco.list
->  │   ...
->  │   └── hsa.list
->  ├── Maps
->  │   ├── eco
->  │   │   ├── eco00010.xml
->  │   │   ...
->  │   │   └── eco00020.xml
->  │   └── hsa
->  │       ├── hsa00010.xml
->  │       ...
->  │       └── hsa0540.xml
->  │
->  └── Scripts
->      ├── kegg2seq.py
->      ├── make_seq.py
->      ├── make_seq.pyc
->      ├── metabolismTypeAss.py
->      ├── noRedundantDB.py
->      ├── parse_kgml.py
->      ├── parse_kgml.pyc
->      ├── traducir.py
->      └── traducir.pyc
->  
+.
++-- _config.yml
++-- _drafts
+|   +-- begin-with-the-crazy-ideas.textile
+|   +-- on-simplicity-in-technology.markdown
++-- _includes
+|   +-- footer.html
+|   +-- header.html
++-- _layouts
+|   +-- default.html
+|   +-- post.html
++-- _posts
+|   +-- 2007-10-29-why-every-programmer-should-play-nethack.textile
+|   +-- 2009-04-26-barcamp-boston-4-roundup.textile
++-- _data
+|   +-- members.yml
++-- _site
++-- index.html
+
+
+
