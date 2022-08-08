@@ -6,6 +6,8 @@
 from parse_kgml import *
 from make_seq import *
 from traducir import *
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import numpy as np
 import sqlite3 as s3
