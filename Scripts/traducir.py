@@ -1,14 +1,31 @@
 # -*- coding: utf-8 -*-
+#
+#------------------------------
+# Name: traducir.py
+# Purpose: Translate a sequence of genes to a sequences of EC numbers (ESS) using
+# the first 3 or 4 levels of EC classification.
+#
+# @uthor:   acph - dragopoot@gmail.com
+#
+# Created:
+# Copyright:   (c) acph 2014
+# Licence:     GNU GENERAL PUBLIC LICENSE, Version 3, 29 June 2007
+#------------------------------
+
 """
-Created on Tue Jul  5 17:03:45 2011
-
-@author: acph
-
-Traduce de seq de genes a secuencias de EC numbers de 3 y 4 niveles
-NO QUITA LOS redundantes aun
+Functions for the translation of a sequence of genes to a sequences of EC numbers (ESS)
+using the first 3 or 4 levels of EC classification.
 """
 
 def traducir_seq4(seq , dic) :
+    """Translate a sequence of genes to a sequences of EC numbers (4 levels). 
+    Manages multiple genes per position in seq.
+
+    seq = string of genes separated by '>'
+    dict = translation dictionary of genes to EC
+
+    Return.
+    A string of EC numbers separated by colon ':' """
     if type(seq) == type(' '):
         seq = seq.split('>')
     traduccion = []
@@ -34,6 +51,14 @@ def traducir_seq4(seq , dic) :
     return trad
 
 def traducir_seq3(seq, dic):
+    """Translate a sequence of genes to a sequences of EC numbers (3 levels). 
+    Manages multiple genes per position in seq.
+
+    seq = string of genes separated by '>'
+    dict = translation dictionary of genes to EC
+
+    Return.
+    A string of EC numbers separated by colon ':' """
     if type(seq) == type(' '):
         seq = seq.split('>')
     traduccion = []
@@ -63,6 +88,10 @@ def traducir_seq3(seq, dic):
     return trad
 
 def gen2ec(archivo): #archivo == sp_enzime.list
+    """Creates a dictinary for the translation of genes to
+    EC number using the kegg sp.list files
+
+    archivo = filename , str"""
     dic = {}
     infile = open(archivo, 'r')
     line = infile.readline()
@@ -79,6 +108,8 @@ def gen2ec(archivo): #archivo == sp_enzime.list
     return dic
 
 def traducir(archivo, salida3, salida4, dic):
+    """Translate the gene sequences in file 'archivo' and stores in EC
+    sequences of 3 levels (salida3) and 4 leveles (salida4)  """
     infile = open(archivo, 'r')
     out3 = open(salida3, 'w')
     out4 = open(salida4, 'w')
@@ -95,5 +126,6 @@ def traducir(archivo, salida3, salida4, dic):
     out4.close()
         
 if __name__ == '__main__':
-    dic = gen2ec('../Enzimas/eco/eco_enzyme.list')
-    traducir('./eco00030_caminos.txt', '30_3EC.txt', '30_4EC.txt', dic)
+    pass
+    # dic = gen2ec('../Enzimas/eco/eco_enzyme.list')
+    # traducir('./eco00030_caminos.txt', '30_3EC.txt', '30_4EC.txt', dic)

@@ -1,8 +1,20 @@
-#!/usr/bin/env python
-# -*- coding:utf-8 -*-
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+#
+#------------------------------
+# Name:
+# Purpose: Functions for the creation of sequences for a networkx tree structure.
+#
+# @uthor:   acph - dragopoot@gmail.com
+#
+# Created:
+# Copyright:   (c) acph 2014
+# Licence:     GNU GENERAL PUBLIC LICENSE, Version 3, 29 June 2007
+#------------------------------
 """
-@author: acph
-prototipos para kegg2seq > python 
+Functions for the creation of sequences for a networkx tree structure.
+The sequences form by backtacing each node from leavs to the root
+
 """
 
 import networkx as nx
@@ -135,4 +147,4 @@ def seqs_from_starts_tfs(grafo, inicios, ti=True):
 
 
 if __name__ == '__main__':
-    sys.exit(main())
+    exit()

@@ -1,8 +1,22 @@
-#!/usr/bin/env python
-#-*- coding:utf-8 -*-
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+#
+#------------------------------
+# Name:     metabolismTypeAss.py
+# Purpose:  Updates a ESS database by adding the metabolism type for each sequence.
+#
+# @uthor:   acph - dragopoot@gmail.com
+#
+# Created:
+# Copyright:   (c) acph 2014
+# Licence:     GNU GENERAL PUBLIC LICENSE, Version 3, 29 June 2007
+#------------------------------
 
 """
     This script updates the seqs.db adding metabolism type for each sequence
+
+Usage:
+     $ python metabolismTypeAss.py [seqs.db]
 """
 
 import sqlite3 as s3
@@ -195,7 +209,7 @@ keggmaps = {'00720': ['Carbon fixation pathways in prokaryotes', 'Energy Metabol
 
 if __name__ == '__main__':
     """
-    $ metabolismTypeAss.py [seqs.db]
+    $ python metabolismTypeAss.py [seqs.db]
     """
     from sys import argv
 

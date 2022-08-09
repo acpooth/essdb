@@ -1,14 +1,32 @@
-#!/usr/bin/env python
-# -*- coding:utf-8 -*-
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+#
+#------------------------------
+# Name:     kegg2seq.py
+# Purpose:   Creates a database of enzymatic step sequences (ESS).
+#
+# @uthor:   acph - dragopoot@gmail.com
+#
+# Created:
+# Copyright:   (c) acph 2014
+# Licence:     GNU GENERAL PUBLIC LICENSE, Version 3, 29 June 2007
+#------------------------------
+
 """
-    Wrapper para crear secuencias de genes y cadenas de paso enzimáticos
+Creates a database of Enzymatic Step Sequences (ESS).
+
+Usage:
+
+   $  python kegg2seq.py
+
+
 """
 from parse_kgml import *
 from make_seq import *
 from traducir import *
-import matplotlib
-matplotlib.use('Agg')
-import matplotlib.pyplot as plt
+# import matplotlib
+# matplotlib.use('Agg')
+# import matplotlib.pyplot as plt
 import numpy as np
 import sqlite3 as s3
 
@@ -285,7 +303,6 @@ VALUES ("%s", "%s", "%s", %i, "%s", "%s", "%s")""" % (gen, e3, e4, len(s), stat[
         # Return to root
         # os.chdir('/home/acph/Desktop/essdb/')
         os.chdir('../../')
-
 
     print 'Commiting'
     db.commit()

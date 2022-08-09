@@ -1,19 +1,28 @@
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
+#
+#------------------------------
+# Name:     parse_kgml.py
+# Purpose:  Functions for the parsing of kgml files and creation of graphs.
+#
+# @uthor:   acph - dragopoot@gmail.com
+#
+# Created:
+# Copyright:   (c) acph 2014
+# Licence:     GNU GENERAL PUBLIC LICENSE, Version 3, 29 June 2007
+#------------------------------
+
 """
-Created on Sun Jul 24 19:52:50 2011
+Functions for the parsing of kgml files and the creation of networkx graphs.
 
-@author: acph
-
-Code for parse kgml and create graphs
-some graphs like eco00190 (oxidative phosphorylation) can't  be proccesed using this code.
+Some graphs like eco00190 (oxidative phosphorylation) can't  be proccesed using this code.
+Also, this code cannot parse the general metabolism maps (like eco01100).
 """
 
 from xml.dom import minidom
 import networkx as nx
 
 # ------------------ parse kgml ----------------------
-
-
 def kgml2dict(kgml):
     """
         Genera un diccionario a partir de un archivo kgml. El diccionario tiene como llaves el nombre de la reacción y como valores
@@ -396,4 +405,4 @@ ipyg = iniciosMG_gene(py, gpyg)
 """
 
 if __name__ == '__main__':
-    sys.exit(main())
+    exit()

@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 #
 #------------------------------
-# Name:
-# Purpose:
+# Name:     noRedundantDB.py
+# Purpose:   Creates a table of non redundat ESS in a ESS database.
 #
 # @uthor:   acph - dragopoot@gmail.com
 #
@@ -25,9 +25,12 @@ correspondance of the important data from each nrESS
 to be obtained in seqs table and eliminating the redundant
 data created in legacy.
 
-IMPORTANT. To create nr table, its ecesary to previously update
+IMPORTANT. To create nr table, its necesary to previously update
 the database with the metabolism type assigned to each sequece,
 using metabolismTypeAss.py script
+
+Usage 
+   $ python noRedundantDB.py seqs.db
 """
 
 import sqlite3 as s3
