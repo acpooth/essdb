@@ -169,8 +169,8 @@ if __name__ == '__main__':
         os.mkdir('../Db/')
     # if not os.path.exists('../Output/'):
     #     os.mkdir('../Output/')
-    if not os.path.exists('../Stats/'):
-        os.mkdir('../Stats/')
+    # if not os.path.exists('../Stats/'):
+    #     os.mkdir('../Stats/')
     # textdb = open('../Db/seqs.txt', 'w')
     db = createDB('../Db/seqs.db')
     os.chdir('../')
@@ -293,6 +293,6 @@ VALUES ("%s", "%s", "%s", %i, "%s", "%s", "%s")""" % (gen, e3, e4, len(s), stat[
     db.execute("CREATE INDEX id_index ON seqs (id)")
     db.close()
     # textdb.close()
-    os.chdir(currentpath)
-    save_hist(all_len, 'Seqs_DB', '../Stats/')
+    # os.chdir(currentpath)
+    # save_hist(all_len, 'Seqs_DB', '../Stats/')
     print 'Ending!!!! '
