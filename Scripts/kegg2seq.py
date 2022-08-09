@@ -164,10 +164,11 @@ if __name__ == '__main__':
     # if 'bsu' in sps: # estr if y su contenido se pueden comentar
     #     sps.remove('bsu') # para pasar a bsu al final de la lista
     #     sps.append('bsu')
+    currentpath = os.path.realpath('.')
     if not os.path.exists('../Db/'):
         os.mkdir('../Db/')
-    if not os.path.exists('../Output/'):
-        os.mkdir('../Output/')
+    # if not os.path.exists('../Output/'):
+    #     os.mkdir('../Output/')
     if not os.path.exists('../Stats/'):
         os.mkdir('../Stats/')
     # textdb = open('../Db/seqs.txt', 'w')
@@ -285,11 +286,13 @@ VALUES ("%s", "%s", "%s", %i, "%s", "%s", "%s")""" % (gen, e3, e4, len(s), stat[
         # os.chdir('/home/acph/Desktop/essdb/')
         os.chdir('../../')
 
-    save_hist(all_len, 'Seqs_DB', 'Stats/')
+
     print 'Commiting'
     db.commit()
     print 'Creating index'
     db.execute("CREATE INDEX id_index ON seqs (id)")
     db.close()
     # textdb.close()
+    os.chdir(currentpath)
+    save_hist(all_len, 'Seqs_DB', '../Stats/')
     print 'Ending!!!! '
