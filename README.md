@@ -1,8 +1,10 @@
 # ESSdb
 
 This repository contains programs for the creation of a Database of **E**nzymatic **S**tep
-**S**equences (**ESS**s). An Enzymatic Step is represented by the Enzyme Commission number (EC number)
-that describes a given reaction. These scripts creates 2 versions of ESSs, one using the 4 levels (ess4)
+**S**equences (**ESS**s). An ESS is defined as a set of consecutive enzymatic reactions
+in a metabolic network. Each enzymatic reaction, also called enzymatic step is represented
+by the Enzyme Commission number (EC number) that describes a given reaction.
+These scripts creates 2 versions of ESSs, one using the 4 levels (ess4)
 of each EC number and the other using only the first 3 levels. The first 3 levels can describe
 the type of reaction of an enzyme.
 
@@ -141,19 +143,80 @@ conda activate essdbpy2
 python kegg2seq.py
 ```
 
-6. Create non redundant table of ESS.
-
-```bash
-python metabolismTypeAss.py ../Db/seqs.db
-```
-
-7. Add a metabolism type column to seqs table
+8. Add a metabolism type column to seqs table.
 
 ```bash
 python noRedundantDB.py ../Db/seqs.db
 ```
 
+
+7. Create non redundant table of ESS.
+
+```bash
+python metabolismTypeAss.py ../Db/seqs.db
+```
+
+
 ## Database structure
+
+The database of ESSs contains 3 tables that contains the sequences and relevant information about them. The tables are the
+following:
+
+ 1. **seqs**: Contains the primary ESSs generated from KEGG *kgml* files. The sequences are stored in different formats, i.e. protein sequences,
+ 3 level EC ESS, 4 level EC ESS, species and metabolic map of origin, among other information.
+ 
+ 2. **map_stats**: Contains statistics about the process of generation of ESSs for each metabolic map.
+ 
+ 3. **nrseqs**: Contains the non-redundant set of ESSs obtained from **seqs** table.
+
+The structure of the database is shown in the following figure:
+
+![Structure of ESS database](,/db_structure.png)
+
+
+### seqs table.
+
+This table is the direct result of the parsing and processing of *kgml* files. The table contains the following columns:
+
+  - **id** : Unique identifier for ESS.
+  - **gen_seq** : Sequences of genes identifiers. Each enzymatic step is delimited by a '>' and may be represented for one
+  or more gene identifiers. If more than one identifier is present, they are separated with a white space, and may represent
+  an enzymatic complex or isozymes.
+		
+  - **ec3**
+  - **ec4**
+  - **arch**
+  - **len**
+  - **map**
+  - **mapid**
+  - **metabolism**
+  - **sp**
+  - **nrid**
+  
+
+### map_stat table.
+
+  - **mapid**
+  - **name**
+  - **sp**
+  - **reactions**
+  - **reversibles**
+  - **genes**
+  - **ec3s**
+  - **ec4s**
+  - **no_EC**
+  - **nodes**
+  - **starts**
+  - **maplinks**
+  - **nseqs**
+  - **metabolism**
+  
+### nrseqs tabel.
+
+  - **nrid**
+  - **ec3**
+  - **len**
+  
 
 
 ## Important.
