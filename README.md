@@ -179,50 +179,93 @@ The structure of the database is shown in the following figure:
 This table is the direct result of the parsing and processing of *kgml* files. The table contains the following columns:
 
   - **id** : Unique identifier for ESS.
-  - **gen_seq** : Sequences of genes identifiers. Each enzymatic step is delimited by a '>' and may be represented for one
-  or more gene identifiers. If more than one identifier is present, they are separated with a white space, and may represent
-  an enzymatic complex or isozymes.
-		
-  - **ec3**
-  - **ec4**
-  - **arch**
-  - **len**
-  - **map**
-  - **mapid**
-  - **metabolism**
-  - **sp**
-  - **nrid**
   
-
+  - **gen_seq** : Sequences of genes identifiers. Each enzymatic step  may be represented for one or more gene
+  identifiers. If more than one identifier is present, they are separated with a  white space, and may represent an
+  enzymatic complex or isozymes. Each enzymatic step is delimited by a '>'. These are the basic sequences from
+  whom the other sequences are generated.
+  		
+  - **ec3**: ESS using the first 3 levels of EC number classification. The enzymatic steps are
+  separated with a colon ':'. The first 3 levels or classification may be used to do a general descripction of a reaction.
+  **These are the sequences used for the creation of the non redundant database (see bellow) and for ESS alignment**.
+  
+    - **ec4**: ESS using the 4 levels of classification. 
+  
+  - **arch**: Currently this column is empty. Originally, this column was used for the storing of a sequences of
+  protein architectures. The architectures are defined according the protein family assignation in SuperFamily
+  database.
+  
+  - **len**: Length of the ESS, measured as the number of enzymatic steps.
+  
+  - **map**: Name of the metabolic map from where the sequence was obtained.
+  
+  - **mapid**: KEGG metabolic map identifier from where the sequence was obtained. The code is created joining
+  the species code (3 or 4 letters) and the map code (5 digit number). Example, for the Glycolisis/Gluconeogenesis
+  of *E. coli* is eco00010.
+  
+  - **metabolism**: KEGG general type of metabolism from where the sequence was obtained.
+  
+  - **sp**: KEGG species identifier from where the sequence was obtained. It consist of a 3 to 4 letter code that
+  abbreviates the species name.
+  
+  - **nrid**: Identifier of the non redundant database that represent the ESS.
+  
+  
 ### map_stat table.
 
-  - **mapid**
-  - **name**
-  - **sp**
-  - **reactions**
-  - **reversibles**
-  - **genes**
-  - **ec3s**
-  - **ec4s**
-  - **no_EC**
-  - **nodes**
-  - **starts**
-  - **maplinks**
-  - **nseqs**
-  - **metabolism**
+  - **mapid**: KEGG metabolic map identifier from where the sequence was obtained. The code is created joining
+  the species code (3 or 4 letters) and the map code (5 digit number). Example, for the Glycolisis/Gluconeogenesis
+  of *E. coli* is eco00010. Unique identifier that represents a unique *kgml* file.
+  
+  - **name**: Full name of the metabolic map.
+  
+  - **sp**: KEGG species identifier of the metabolic map.
+  
+  - **reactions**: Number of reactions parsed from a metabolic map (*kgml* file).
+  
+  - **reversibles**: Number of reversible reactions in a metabolic map.
+  
+  - **genes**: Number of genes annotated in a metabolic map.
+  
+  - **ec3s**: Number of different EC numbers at 3 level of classification.
+  
+  - **ec4s**: Number of different EC numbers at 4 level of classification.
+  
+  - **no_EC**: Number of genes with no EC number assigned.
+  
+  - **nodes**: Number of nodes of the gene graph generated from the *kgml* file.
+  
+  - **starts**: Number of *start nodes* identified from in the metabolic map. Each *start node*
+  is used for the creation of the *Breath First Search* tree.
+  
+  - **maplinks**: Number links to other maps present in each map.
+  
+  - **nseqs**: Number of ESSs generated from a map.
+  
+  - **metabolism**: KEGG general type of metabolism type category for a map.
   
 ### nrseqs tabel.
 
-  - **nrid**
-  - **ec3**
-  - **len**
+  - **nrid**: Unique identifier for the non redundant ESS table.
   
+  - **ec3**: ESS using the first 3 levels of EC number classification. The enzymatic steps are
+  separated with a colon ':'. **These are the sequences used for the ESS alignment**.
+  
+  - **len**: Length of the ESS, measured as the number of enzymatic steps.
+
+
+## Creation of Enzymatic Step Sequences.
+
+
 
 
 ## Important.
 
 - Only creates the ESS from those organisms that has a Enzyme list in ./Enzymes folder
-  - Those organisms with enzyme list without forlder in ./Maps will raise an error.
+  - Those organisms with enzyme list without folder in ./Maps will raise an error.
+- Currently, the program must be executed completely. If a error is raised, the program
+must be executed from the beginning.
+
 
 ## Papers.
 The programs presented here were used all or in parts in the following papers.
