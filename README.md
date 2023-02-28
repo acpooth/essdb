@@ -143,6 +143,12 @@ conda activate essdbpy2
 python kegg2seq.py
 ```
 
+This script has the option -g (--graphtype) that specifies the type of graph used
+for the construction of the ESS database: 'directed' or 'nodirected'. When the graphs are 
+directed, BFS algorithm takes into account the reversibility of the reactions and 
+only follows forward edges. This modifies the number and length of the ESSs generated. 
+By default the program uses no directed graphs.
+
 8. Add a metabolism type column to seqs table.
 
 ```bash

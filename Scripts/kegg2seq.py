@@ -21,6 +21,7 @@ Usage:
 
 
 """
+import argparse
 from parse_kgml import *
 from make_seq import *
 from traducir import *
@@ -31,6 +32,16 @@ import numpy as np
 import sqlite3 as s3
 
 from xml.parsers.expat import ExpatError
+
+
+def argumentParser():
+    parser = argparse.ArgumentParser(description='Script for creation of Enzymatic Step Sequence database',
+                                     epilog="Please follow the instructions in README.md")
+    parser.add_argument('-g', '--graphtype', default='nodirected', help="""Type of graph to use
+    for the contruction of ESS. 'directed' or 'nodirected' [nodirected]. Using 'directed'
+    graph takes into account the directionality of the reactions for the construction of BFS trees
+    and affect the total number of ESS generated.""")
+    return parser.parse_args()
 
 
 def map_stats(react_dict, pathway, grafog, inicios, gen2ec):
@@ -169,6 +180,7 @@ if __name__ == '__main__':
     This script nedds to be in kegg2seq/Scripts
     """
     import os
+    args = argumentParser()
     # OLD
     # sps = [d for d in os.listdir('../Enzymes/') if '.' not in d]
     # sps = [d for d in sps if '_' not in d]
@@ -225,7 +237,15 @@ if __name__ == '__main__':
                     k2dlog.write(
                         '[WARN] %s map %s ommited with ExpatError\n' % (sp, m))
                     continue
-            g = nx.Graph(lista_adyacencia_genes(d))
+            if args.graphtype == 'directed':
+                g = nx.DiGraph(lista_adyacencia_genes(d))
+            elif args.graphtype == 'nodirected':
+                g = nx.Graph(lista_adyacencia_genes(d))
+            else:
+                print "Wrong option for graphtype, please remove ../DB folder and try again."
+                print "Exiting!"
+                exit()
+
             i = iniciosMG_gene(d, g)
             if i == []:
                 i = iniciosMG_gene(d, g, x=5, y=4)
